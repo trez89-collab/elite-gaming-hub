@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Gaming Hub - Connect with Gamers Worldwide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎮 ELITE GAMING HUB</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#communities">Communities</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#why-join">Why Join</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ELITE GAMING HUB</h1>
+            <p>Connecting Gamers Across Different Worlds.</p>
+            <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">JOIN THE COMMUNITY</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>👋 About Us</h2>
+            <p>Elite Gaming Hub is a gaming community where players from different games can meet, chat, compete, and make friends.</p>
+            <p><strong>Whether you play FC Mobile, eFootball, COD, or Free Fire, there is a place for you here.</strong></p>
+        </div>
+    </section>
+
+    <!-- Community Categories Section -->
+    <section class="communities" id="communities">
+        <div class="container">
+            <h2>🎮 Community Categories</h2>
+            <div class="cards-grid">
+                <!-- FC Mobile Card -->
+                <div class="community-card">
+                    <h3>⚽ FC Mobile Community</h3>
+                    <p><strong>Discuss:</strong></p>
+                    <ul>
+                        <li>H2H</li>
+                        <li>VSA</li>
+                        <li>Market</li>
+                        <li>Events</li>
+                        <li>Squad Building</li>
+                    </ul>
+                </div>
+
+                <!-- eFootball Card -->
+                <div class="community-card">
+                    <h3>⚽ eFootball Community</h3>
+                    <p><strong>Discuss:</strong></p>
+                    <ul>
+                        <li>Team Builds</li>
+                        <li>Tactics</li>
+                        <li>Player Reviews</li>
+                        <li>Match Highlights</li>
+                    </ul>
+                </div>
+
+                <!-- COD Card -->
+                <div class="community-card">
+                    <h3>🔫 COD Community</h3>
+                    <p><strong>Discuss:</strong></p>
+                    <ul>
+                        <li>Loadouts</li>
+                        <li>Ranked</li>
+                        <li>Multiplayer</li>
+                        <li>Clan Battles</li>
+                    </ul>
+                </div>
+
+                <!-- Free Fire Card -->
+                <div class="community-card">
+                    <h3>🔥 Free Fire Community</h3>
+                    <p><strong>Discuss:</strong></p>
+                    <ul>
+                        <li>Ranked Push</li>
+                        <li>Custom Rooms</li>
+                        <li>Character Builds</li>
+                        <li>Squad Recruitment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <h2>📈 Community Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>4</h3>
+                    <p>Game Communities</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100+</h3>
+                    <p>Members</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Daily</h3>
+                    <p>Discussions</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Weekly</h3>
+                    <p>Events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="why-join" id="why-join">
+        <div class="container">
+            <h2>🏆 Why Join?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">✅ Meet New Gamers</div>
+                <div class="benefit-item">✅ Find Teammates</div>
+                <div class="benefit-item">✅ Participate In Events</div>
+                <div class="benefit-item">✅ Share Clips</div>
+                <div class="benefit-item">✅ Build Friendships</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>📞 Contact & Join Us</h2>
+            
+            <!-- Follow Me Section -->
+            <div class="follow-section">
+                <h3>Follow Me</h3>
+                <div class="social-buttons">
+                    <a href="https://www.tiktok.com/@trez.games" target="_blank" class="social-btn tiktok">🎵 TikTok</a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-btn gaming">🎮 Gaming Account</a>
+                </div>
+            </div>
+
+            <!-- Join Request Form -->
+            <div class="form-section">
+                <h3>Join Request Form</h3>
+                <form id="joinForm" class="join-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameCategory">Game Category</label>
+                        <select id="gameCategory" required>
+                            <option value="">Select a Game</option>
+                            <option value="fc-mobile">FC Mobile</option>
+                            <option value="efootball">eFootball</option>
+                            <option value="cod">COD</option>
+                            <option value="free-fire">Free Fire</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Message Box" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the Terms and Conditions</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Created By Trez</p>
+            <p>Elite Gaming Hub © 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
